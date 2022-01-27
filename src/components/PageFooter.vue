@@ -10,16 +10,16 @@
 </template>
 
 <script>
-import TopFooter from "./footer/TopFooter.vue";
 import MidFooter from "./footer/MidFooter.vue";
 import SpamSection from "./footer/SpamSection.vue";
+import TopFooter from "./footer/TopFooter.vue";
 
 export default {
-  components: { SpamSection },
-  TopFooter,
-  MidFooter,
-  SpamSection,
+  components: { TopFooter, MidFooter, SpamSection },
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+footer {
+}
+</style>
