@@ -55,8 +55,8 @@ header {
         cursor: pointer;
 
         &:hover {
-          color: #0282f9;
-          border-bottom: 4px solid #0282f9;
+          color: $dc-blue;
+          border-bottom: 4px solid $dc-blue;
         }
       }
     }
