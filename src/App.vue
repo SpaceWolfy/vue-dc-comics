@@ -2,6 +2,8 @@
   <div id="app">
     <!-- Header (Page) -->
     <header-box />
+    <!-- Jumbo -->
+    <jumbo-series />
     <!-- Main Section -->
     <main-section />
     <!-- Footer (Page) -->
@@ -13,9 +15,10 @@
 import HeaderBox from "./components/HeaderBox.vue";
 import MainSection from "./components/MainSection.vue";
 import PageFooter from "./components/PageFooter.vue";
+import JumboSeries from "./components/JumboSeries.vue";
 export default {
   name: "App",
-  components: { HeaderBox, MainSection, PageFooter },
+  components: { HeaderBox, MainSection, PageFooter, JumboSeries },
 };
 </script>
 
