@@ -25,6 +25,7 @@ export default {};
 .top-footer {
   height: 160px;
   width: 100%;
+  position: relative;
   background-color: $dc-blue;
   display: $display-f;
   justify-content: center;
