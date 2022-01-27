@@ -42,8 +42,6 @@ header {
     }
 
     ul {
-      list-style: none;
-      display: $display-f;
       font-size: 12px;
       font-weight: 600;
       color: #504c50;
@@ -52,7 +50,6 @@ header {
         padding: 46px 0px;
         margin: 0 17px;
         border-bottom: 4px solid transparent;
-        cursor: pointer;
 
         &:hover {
           color: $dc-blue;
