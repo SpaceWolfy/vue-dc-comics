@@ -5,7 +5,7 @@
     <!-- Jumbo -->
     <jumbo-series />
     <!-- Main Section -->
-    <main-section />
+    <main-section :cards="comics" />
     <!-- Footer (Page) -->
     <page-footer />
   </div>
