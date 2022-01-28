@@ -1,15 +1,19 @@
 <template>
   <div class="black-bar">
     <div class="container">
-      <div class="ad-series">CURRENT SERIES</div>
-      <div v-for="(comic, index) in cards" :key="index" class="comic-card">
+      <div class="ad-series btn-main-s">CURRENT SERIES</div>
+      <div
+        v-for="(comic, index) in cards"
+        :key="index"
+        class="comic-card btn-main-s"
+      >
         <div class="card-img">
           <img :src="comic.thumb" alt="" />
         </div>
         <div class="title">{{ comic.series }}</div>
       </div>
 
-      <div class="load">LOAD MORE</div>
+      <div class="load btn-main-s">LOAD MORE</div>
     </div>
   </div>
 </template>
