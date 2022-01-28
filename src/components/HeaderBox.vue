@@ -5,23 +5,20 @@
         <img src="@/assets/img/dc-logo.png" alt="" />
       </div>
       <ul>
-        <li>CHARACTERS</li>
-        <li>COMICS</li>
-        <li>MOVIES</li>
-        <li>TV</li>
-        <li>GAMES</li>
-        <li>COLLECTIBLES</li>
-        <li>VIDEOS</li>
-        <li>FANS</li>
-        <li>NEWS</li>
-        <li>SHOP</li>
+        <li v-for="(navbtn, index) in nav" :key="index">
+          <a :href="navbtn.link">{{ navbtn.title }}</a>
+        </li>
       </ul>
     </nav>
   </header>
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    nav: Array,
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -44,7 +41,6 @@ header {
     ul {
       font-size: 12px;
       font-weight: 600;
-      color: #504c50;
 
       li {
         padding: 46px 0px;
@@ -52,8 +48,16 @@ header {
         border-bottom: 4px solid transparent;
 
         &:hover {
-          color: $dc-blue;
           border-bottom: 4px solid $dc-blue;
+        }
+
+        &:hover a {
+          color: $dc-blue;
+        }
+
+        a {
+          text-decoration: none;
+          color: #504c50;
         }
       }
     }
