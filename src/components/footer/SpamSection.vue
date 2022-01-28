@@ -48,6 +48,10 @@ export default {};
     font-weight: 600;
     border: 2px solid $dc-blue;
     color: white;
+
+    &:hover {
+      background-color: $dc-blue;
+    }
   }
 
   nav {
